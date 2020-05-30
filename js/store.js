@@ -88,10 +88,10 @@
     //var charset = "0123456789";
 
     for (var i = 0; i < 6; i++) {
-      //	newId += charset.charAt(Math.floor(Math.random() * charset.length));
+      // newId += charset.charAt(Math.floor(Math.random() * charset.length));  // may cause a duplicated id
       newId += Math.floor(Math.random() * 1000);
     }
-    console.log(newId);
+
     // If an ID was actually given, find the item and update each property
     if (id) {
       for (var i = 0; i < todos.length; i++) {
